@@ -1,5 +1,4 @@
 import { CommandBlockWithTitle, Container } from "../components";
-import { SITE_NAME } from "../lib/constants";
 
 export default function IndexPage() {
   return (
@@ -12,12 +11,8 @@ export default function IndexPage() {
         <CommandBlockWithTitle
           label="In your project folder run:"
           command="deno run --allow-write --allow-read --allow-run"
-          link={`${SITE_NAME}/add-tailwind-to-next.ts`}
-        />
-        <CommandBlockWithTitle
-          label="or:"
-          command="deno run --allow-write --allow-read --allow-run"
-          link={`${SITE_NAME}/t`}
+          filePath="/add-tailwind-to-next.ts"
+          info="By default it uses yarn. If you don't have yarn, it will use npm. You can force it by adding --npm after the module name."
         />
       </article>
     </Container>

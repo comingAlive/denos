@@ -1,15 +1,18 @@
 import Link from "next/link";
 import { useState } from "react";
+import { SITE_NAME } from "../lib/constants";
 import { copyToClipboard } from "../lib/utils";
 
-const CommandBlockWithTitle = ({ label, command, link }) => {
+const CommandBlockWithTitle = ({ label, command, filePath,info }) => {
   const [isCopied, setIsCopied] = useState(false);
+  const rawLink = SITE_NAME + "/raw" + filePath;
+  const link = SITE_NAME + filePath;
   return (
     <>
       <p className="mt-2 text-lg">{label}</p>
       <p className="relative px-1 mt-2 text-base text-white bg-black rounded">
         <span>{command + " "}</span>
-        <Link href={link}>
+        <Link href={rawLink}>
           <a className="underline cursor-pointer">{link}</a>
         </Link>
       </p>
@@ -26,10 +29,11 @@ const CommandBlockWithTitle = ({ label, command, link }) => {
           {isCopied ? "Copied" : "Copy"}
         </button>
         {" | "}
-        <Link href={link}>
+        <Link href={rawLink}>
           <a>Raw</a>
         </Link>
       </div>
+      <div>{info}</div>
     </>
   );
 };

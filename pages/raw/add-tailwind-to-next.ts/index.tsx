@@ -1,4 +1,4 @@
-import { PreRawScript } from "../../components";
+import { PreRawScript } from "../../../components";
 
 const AddTailwindToNextPage = () => <PreRawScript />;
 
