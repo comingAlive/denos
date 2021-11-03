@@ -3,8 +3,8 @@ import { CommandBlockWithTitle, Container } from "../components";
 export default function IndexPage() {
   return (
     <Container
-      title="Deno Useful Scripts List"
-      description="Deno Useful Scripts List"
+      title="Deno Useful Scripts"
+      description="Deno Useful Scripts"
     >
       <article className="mt-10">
         <h2 id="1">Add Tailwind CSS to Next.js project</h2>

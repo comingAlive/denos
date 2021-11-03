@@ -10,7 +10,7 @@ const Container = ({ title, description, children }) => {
       </Head>
       <main className="pt-10 mx-auto max-w-3xl">
         <header>
-          <h1>Deno Useful Scripts List</h1>
+          <h1>Deno Useful Scripts</h1>
         </header>
         {children}
         <footer className="absolute bottom-6 right-10 text-base">
