@@ -16,7 +16,7 @@ export default function IndexPage() {
         />
         <CommandBlockWithTitle
           label="or:"
-          command="deno run -A"
+          command="deno run -A --no-check"
           link={`${SITE_NAME}/t`}
         />
       </article>

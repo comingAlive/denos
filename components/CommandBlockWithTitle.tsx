@@ -9,7 +9,9 @@ const CommandBlockWithTitle = ({ label, command, link }) => {
       <p className="mt-2 text-lg">{label}</p>
       <p className="relative px-1 mt-2 text-base text-white bg-black rounded">
         <span>{command + " "}</span>
-        <a className="underline cursor-pointer">{link}</a>
+        <Link href={link}>
+          <a className="underline cursor-pointer">{link}</a>
+        </Link>
       </p>
       <div className="mt-2 mb-4 text-base">
         <button
