@@ -11,12 +11,12 @@ export default function IndexPage() {
         <h2 id="1">Add Tailwind CSS to Next.js project</h2>
         <CommandBlockWithTitle
           label="In your project folder run:"
-          command="deno run --allow-write --allow-read --allow-run --no-check"
+          command="deno run --allow-write --allow-read --allow-run"
           link={`${SITE_NAME}/add-tailwind-to-next.ts`}
         />
         <CommandBlockWithTitle
           label="or:"
-          command="deno run -A --no-check"
+          command="deno run -A"
           link={`${SITE_NAME}/t`}
         />
       </article>

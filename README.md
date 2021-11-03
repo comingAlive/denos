@@ -5,12 +5,12 @@
 In your project folder run:
 
 ```bash
-deno run --allow-write --allow-read --allow-run --no-check https://denos.xyz/add-tailwind-to-next.ts
+deno run --allow-write --allow-read --allow-run https://denos.xyz/add-tailwind-to-next.ts
 ```
 
 or:
 
 ```bash
-deno run -A --no-check https://denos.xyz/t
+deno run -A https://denos.xyz/t
 ```
 
