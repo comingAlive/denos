@@ -12,7 +12,7 @@ const CommandBlockWithTitle = ({ label, command, filePath,info }) => {
       <p className="mt-2 text-lg">{label}</p>
       <p className="relative px-1 mt-2 text-base text-white bg-black rounded">
         <span>{command + " "}</span>
-        <Link href={rawLink}>
+        <Link href={link}>
           <a className="underline cursor-pointer">{link}</a>
         </Link>
       </p>
