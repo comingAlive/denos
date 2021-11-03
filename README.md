@@ -11,6 +11,6 @@ deno run --allow-write --allow-read --allow-run https://denos.xyz/add-tailwind-t
 or:
 
 ```bash
-deno run -A https://denos.xyz/t
+deno run --allow-write --allow-read --allow-run https://denos.xyz/t
 ```
 
