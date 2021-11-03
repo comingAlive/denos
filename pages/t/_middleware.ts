@@ -6,8 +6,8 @@ export function middleware(req: NextRequest) {
   if ((req.ua! as any).browser.name) {
     return NextResponse.next();
   }
-  // return NextResponse.redirect("http://localhost:3000/files/add-tailwind-to-next.ts");
+  // return NextResponse.redirect({SITE_NAME} + "/files/add-tailwind-to-next.ts");
   return NextResponse.rewrite(
-    { SITE_NAME } + "/files/add-tailwind-to-next.ts"
+    String(SITE_NAME) + "/files" + "/add-tailwind-to-next.ts"
   );
 }

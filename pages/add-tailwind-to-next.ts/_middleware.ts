@@ -7,5 +7,5 @@ export function middleware(req: NextRequest) {
     return NextResponse.next();
   }
   // return NextResponse.redirect("http://localhost:3000/files" + pathname);
-  return NextResponse.rewrite({ SITE_NAME } + "/files" + pathname);
+  return NextResponse.rewrite(String(SITE_NAME) + "/files" + pathname);
 }
