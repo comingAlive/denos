@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { SITE_NAME } from "../../lib/constants";
 
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
@@ -6,5 +7,5 @@ export function middleware(req: NextRequest) {
     return NextResponse.next();
   }
   // return NextResponse.redirect("http://localhost:3000/files" + pathname);
-  return NextResponse.rewrite("http://localhost:3000/files" + pathname);
+  return NextResponse.rewrite({ SITE_NAME } + "/files" + pathname);
 }

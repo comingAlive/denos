@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { copyToClipboard } from "../lib/utils";
 
-const CodeComponent = ({ label, command, link }) => {
+const CommandBlockWithTitle = ({ label, command, link }) => {
   const [isCopied, setIsCopied] = useState(false);
   return (
     <>
@@ -31,4 +31,4 @@ const CodeComponent = ({ label, command, link }) => {
     </>
   );
 };
-export default CodeComponent;
+export default CommandBlockWithTitle;
