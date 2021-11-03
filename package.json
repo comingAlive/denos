@@ -1,0 +1,29 @@
+{
+  "name": "my-app",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "node scripts/generate-sitemap.mjs",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.0.2",
+    "preact": "^10.5.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.6",
+    "@types/react": "17.0.33",
+    "autoprefixer": "^10.4.0",
+    "eslint": "7",
+    "eslint-config-next": "12.0.2",
+    "globby": "^12.0.2",
+    "postcss": "^8.3.11",
+    "prettier": "^2.4.1",
+    "tailwindcss": "3.0.0-alpha.1",
+    "typescript": "4.4.4"
+  }
+}

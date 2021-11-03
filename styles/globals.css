@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /*@font-face {*/
+  /*  font-family: "Proxima Nova Rg";*/
+  /*  font-style: normal;*/
+  /*  font-weight: 300;*/
+  /*  src: url(/fonts/ProximaNova-Light.woff);*/
+  /*}*/
+  /*@font-face {*/
+  /*  font-family: "Proxima Nova Rg";*/
+  /*  font-style: normal;*/
+  /*  font-weight: 400;*/
+  /*  src: url(/fonts/ProximaNova-Regular.woff);*/
+  /*}*/
+  /*@font-face {*/
+  /*  font-family: "Proxima Nova Rg";*/
+  /*  font-style: normal;*/
+  /*  font-weight: 600;*/
+  /*  src: url(/fonts/ProximaNova-Semibold.woff);*/
+  /*}*/
+  /*@font-face {*/
+  /*  font-family: "Proxima Nova Rg";*/
+  /*  font-style: normal;*/
+  /*  font-weight: 700;*/
+  /*  src: url(/fonts/ProximaNova-Bold.woff);*/
+  /*}*/
+  /*@font-face {*/
+  /*  font-family: "Proxima Nova Rg";*/
+  /*  font-style: italic;*/
+  /*  font-weight: 400;*/
+  /*  src: url(/fonts/ProximaNova-RegularIt.woff);*/
+  /*}*/
+  /*@font-face {*/
+  /*  font-family: "Proxima Nova Rg";*/
+  /*  font-style: italic;*/
+  /*  font-weight: 700;*/
+  /*  src: url(/fonts/ProximaNova-BoldIt.woff);*/
+  /*}*/
+  html,
+  body,
+  #__next,
+  main {
+  }
+
+  body {
+    @apply text-lg;
+  }
+
+  h1 {
+    @apply text-4xl font-semibold;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+
+  h3 {
+    @apply text-xl font-semibold;
+  }
+
+  a {
+    @apply border-b-2 border-black;
+  }
+
+  strong {
+    @apply font-semibold;
+  }
+}
