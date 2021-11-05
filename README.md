@@ -1,4 +1,4 @@
-## Deno Useful Scripts
+## Collection of Deno Scripts
 
 ### Add Tailwind CSS to Next.js project ([Raw](https://denos.xyz/raw/add-tailwind-to-next.ts))
 
