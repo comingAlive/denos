@@ -7,6 +7,7 @@ const Container = ({ title, description, children }) => {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="pt-10 mx-auto max-w-3xl">
         <header>
