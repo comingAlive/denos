@@ -30,7 +30,7 @@ const PreRawScript = () => {
         'console.log(packageManager[0] + " package manager was detected");\n' +
         "\n" +
         "const cmd = [\n" +
-        '  "tailwindcss@3.0.0-alpha.1",\n' +
+        '  "tailwindcss",\n' +
         '  "postcss@latest",\n' +
         '  "autoprefixer@latest",\n' +
         "];\n" +
