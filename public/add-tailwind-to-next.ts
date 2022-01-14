@@ -27,7 +27,7 @@ if (Deno.args[0] === "--npm") {
 console.log(packageManager[0] + " package manager was detected");
 
 const cmd = [
-  "tailwindcss",
+  "tailwindcss@latest",
   "postcss@latest",
   "autoprefixer@latest",
 ];
