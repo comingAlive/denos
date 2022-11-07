@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://denos.xyz/sitemap.xml
+Sitemap: https://denos.vercel.app/sitemap.xml
