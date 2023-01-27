@@ -3,7 +3,7 @@ import { useState } from "react";
 import { SITE_NAME } from "../lib/constants";
 import { copyToClipboard } from "../lib/utils";
 
-const CommandBlockWithTitle = ({ label, command, filePath,info }) => {
+const CommandBlockWithTitle = ({ label, command, filePath, info }) => {
   const [isCopied, setIsCopied] = useState(false);
   const rawLink = SITE_NAME + "/raw" + filePath;
   const link = SITE_NAME + filePath;
@@ -33,7 +33,7 @@ const CommandBlockWithTitle = ({ label, command, filePath,info }) => {
           <a>Raw</a>
         </Link>
       </div>
-      <div>{info}</div>
+      <div className="text-base">{info}</div>
     </>
   );
 };
