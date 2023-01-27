@@ -4,7 +4,7 @@ const globalStylesPath = "styles/globals.css";
 const cmdVer = ["pnpm", "-v"];
 const preWindows = ["cmd", "/c"];
 
-let packageManager = ["pnpm", "add", "--save-dev "];
+let packageManager = ["pnpm", "add", "-D"];
 
 try {
   const process = Deno.run({
@@ -18,16 +18,16 @@ try {
   }
   await process.status();
 } catch (e) {
-  packageManager = ["npm", "i", "--save-dev "];
+  packageManager = ["npm", "i", "--save-dev"];
 }
 if (Deno.args[0] === "--npm") {
-  packageManager = ["npm", "i", "--save-dev "];
+  packageManager = ["npm", "i", "--save-dev"];
 }
 if (Deno.args[0] === "--yarn") {
-  packageManager = ["yarn", "add", "-D "];
+  packageManager = ["yarn", "add", "-D"];
 }
 if (Deno.args[0] === "--pnpm") {
-  packageManager = ["pnpm", "add", "--save-dev "];
+  packageManager = ["pnpm", "add", "-D"];
 }
 
 console.log(packageManager[0] + " package manager was detected");

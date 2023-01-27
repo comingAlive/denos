@@ -17,17 +17,17 @@ const PreRawScript = () => {
         "  });\n" +
         '  const output = await process.output(); // "piped" must be set\n' +
         "  if (!output.length) {\n" +
-        '    packageManager = ["npm", "i", "--save-dev "];\n' +
+        '    packageManager = ["npm", "i", "--save-dev"];\n' +
         "  }\n" +
         "  await process.status();\n" +
         "} catch (e) {\n" +
-        '  packageManager = ["npm", "i", "--save-dev "];\n' +
+        '  packageManager = ["npm", "i", "--save-dev"];\n' +
         "}\n" +
         'if (Deno.args[0] === "--npm") {\n' +
-        '  packageManager = ["npm", "i", "--save-dev "];\n' +
+        '  packageManager = ["npm", "i", "--save-dev"];\n' +
         "}\n" +
         'if (Deno.args[0] === "--yarn") {\n' +
-        '  packageManager = ["yarn", "add", "-D "];\n' +
+        '  packageManager = ["yarn", "add", "-D"];\n' +
         "}\n" +
         "\n" +
         'console.log(packageManager[0] + " package manager was detected");\n' +
