@@ -14,9 +14,13 @@ const Container = ({ title, description, children }) => {
           <h1>Collection of Deno Scripts</h1>
         </header>
         {children}
-        <footer className="absolute bottom-6 right-10 text-base">
+        <footer className="absolute bottom-6 right-10 text-base gap-2 flex">
           <Link legacyBehavior href="https://github.com/comingAlive/denos">
-            <a>Github</a>
+            <a>Github repo</a>
+          </Link>
+          /
+          <Link legacyBehavior href="https://t.me/aiwon">
+            <a>@aiwon</a>
           </Link>
         </footer>
       </main>

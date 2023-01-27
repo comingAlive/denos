@@ -1,6 +1,10 @@
 import { CommandBlockWithTitle, Container } from "../components";
+import { supabase } from "../lib/supabaseClient";
+import { useEffect } from "react";
+import useSubmitVisitor from "../hooks/useSubmitVisitor";
 
 export default function IndexPage() {
+  useSubmitVisitor();
   return (
     <Container
       title="Collection of Deno Scripts"
