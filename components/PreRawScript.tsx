@@ -7,7 +7,7 @@ const PreRawScript = () => {
         'const cmdVer = ["yarn", "-v"];\n' +
         'const preWindows = ["cmd", "/c"];\n' +
         "\n" +
-        'let packageManager = ["yarn", "add", "-D"];\n' +
+        'let packageManager = ["pnpm", "add", "-D"];\n' +
         "\n" +
         "try {\n" +
         "  const process = Deno.run({\n" +
@@ -25,6 +25,9 @@ const PreRawScript = () => {
         "}\n" +
         'if (Deno.args[0] === "--npm") {\n' +
         '  packageManager = ["npm", "i", "--save-dev "];\n' +
+        "}\n" +
+        'if (Deno.args[0] === "--yarn") {\n' +
+        '  packageManager = ["yarn", "add", "-D "];\n' +
         "}\n" +
         "\n" +
         'console.log(packageManager[0] + " package manager was detected");\n' +

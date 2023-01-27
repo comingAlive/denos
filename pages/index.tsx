@@ -12,7 +12,7 @@ export default function IndexPage() {
           label="In your project folder run:"
           command="deno run --allow-write --allow-read --allow-run"
           filePath="/add-tailwind-to-next.ts"
-          info="By default it uses yarn. If you don't have yarn, it will use npm. You can force it by adding --npm after the module name."
+          info="By default it uses pnpm. If you don't have pnpm, it will use npm. You can force it by adding --npm/--yarn after the module name."
         />
       </article>
     </Container>
