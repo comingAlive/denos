@@ -1,10 +1,10 @@
 const start = Date.now();
 const globalStylesPath = "styles/globals.css";
 
-const cmdVer = ["yarn", "-v"];
+const cmdVer = ["pnpm", "-v"];
 const preWindows = ["cmd", "/c"];
 
-let packageManager = ["yarn", "add", "-D"];
+let packageManager = ["pnpm", "add", "--save-dev "];
 
 try {
   const process = Deno.run({
@@ -23,14 +23,16 @@ try {
 if (Deno.args[0] === "--npm") {
   packageManager = ["npm", "i", "--save-dev "];
 }
+if (Deno.args[0] === "--yarn") {
+  packageManager = ["yarn", "add", "-D "];
+}
+if (Deno.args[0] === "--pnpm") {
+  packageManager = ["pnpm", "add", "--save-dev "];
+}
 
 console.log(packageManager[0] + " package manager was detected");
 
-const cmd = [
-  "tailwindcss@latest",
-  "postcss@latest",
-  "autoprefixer@latest",
-];
+const cmd = ["tailwindcss@latest", "postcss@latest", "autoprefixer@latest"];
 
 const process = Deno.run({
   cmd:
