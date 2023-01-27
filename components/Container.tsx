@@ -15,7 +15,7 @@ const Container = ({ title, description, children }) => {
         </header>
         {children}
         <footer className="absolute bottom-6 right-10 text-base">
-          <Link href="https://github.com/comingAlive/denos">
+          <Link legacyBehavior href="https://github.com/comingAlive/denos">
             <a>Github</a>
           </Link>
         </footer>
