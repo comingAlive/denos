@@ -6,7 +6,6 @@ module.exports = {
   //   concurrentFeatures: true,
   //   serverComponents: true,
   // },
-  i18n: { locales: ["en"], defaultLocale: "en" },
   // webpack(config, { dev, isServer }) {
   //   // Replace React with Preact in client production build
   //   if (!dev && !isServer) {
@@ -18,12 +17,4 @@ module.exports = {
   //   }
   //   return config;
   // },
-  async rewrites() {
-    return [
-      {
-        source: "/about",
-        destination: "/",
-      },
-    ];
-  },
 };
